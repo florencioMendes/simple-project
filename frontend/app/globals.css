@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@font-face {
+  font-family:"Poppins";
+  src: url("../fonts/Poppins/Poppins-Regular.ttf") format("opentype");
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family:"Poppins-light";
+  src: url("../fonts/Poppins/Poppins-Light.ttf") format("opentype");
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family:"Poppins-bold";
+  src: url("../fonts/Poppins/Poppins-Bold.ttf") format("opentype");
+  font-style: normal;
+  font-display: swap;
+}
+.underline-animation {
+  position: relative;
+  padding-bottom: 4px;
+}
+
+.underline-animation::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  bottom: 0;
+  left: 0;
+  background-color: #8C52FF; /* Tailwind's purple-400 color */
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  border-radius: 4px; 
+}
+
+.underline-animation:hover::before,
+.underline-animation.active::before {
+  opacity: 1;
+}
+
+.default-shadow {
+  box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.7);
+  -webkit-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.7);
+  -moz-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.7);
+}
+
+.scrollable {
+  overflow-y: auto; /* Rolagem vertical */
+  border-radius: 8px; /* Border-radius */
+  padding: 16px; /* Padding interno */
+}
+
+/* Estiliza a barra de rolagem para navegadores WebKit */
+.scrollable::-webkit-scrollbar {
+  width: 8px; /* Largura da barra de rolagem */
+  height: 8px; /* Altura da barra de rolagem */
+}
+
+.scrollable::-webkit-scrollbar-thumb {
+  background-color: #dad7d7; /* Cor do "polegar" */
+  border-radius: 4px; /* Border-radius do "polegar" */
+}
+
+.scrollable::-webkit-scrollbar-thumb:hover {
+  background-color: #555; /* Cor do "polegar" ao passar o mouse */
+  cursor: pointer;
+}
+
+.scrollable::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Cor da trilha da barra de rolagem */
+}
+  

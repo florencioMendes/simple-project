@@ -1,0 +1,75 @@
+{
+    "name": "Usuário",
+    "assinatura": {
+        "123456": {
+            "plano": "premium",
+            "periodo": "anual",
+            "mensalidade": 199.90,
+            "assinatura": "1717880160",
+            "encerra": "1717880160",
+            "status": "ativa"
+        },
+        "23456": {
+            "plano": "premium",
+            "periodo": "anual",
+            "mensalidade": 199.90,
+            "assinatura": "1717880160",
+            "encerra": "1717880160",
+            "status": "cancelado"
+        }
+    },
+    "boxes": {
+        "1": {
+            "entregue": "1717880160",
+            "plano": "premium anual",
+            "produtos": [
+                "barra cereal",
+                "coqueteleira",
+                "desodorante",
+                "meias",
+                "luvas",
+                "whey"
+            ]
+        },
+        "2": {
+            "entregue": "1717880160",
+            "plano": "premium anual",
+            "produtos": [
+                "barra cereal",
+                "coqueteleira",
+                "desodorante",
+                "meias",
+                "luvas",
+                "whey"
+            ]
+        },
+        "3": {
+            "entregue": "1717880160",
+            "plano": "premium anual",
+            "produtos": [
+                "barra cereal",
+                "coqueteleira",
+                "desodorante",
+                "meias",
+                "luvas",
+                "whey"
+            ]
+        }
+    },
+    "pagamento": {
+        "bandeira": "MasterCard",
+        "numero": "xxxx xxxx xxxx 0000",
+        "CVV": "xxx",
+        "exp": "01/01/0001",
+        "nome": "Usuário"
+    },
+    "entrega": {
+        "cep": "00000000",
+        "endereco": "rua",
+        "numero": "numero",
+        "complemento": "complemento",
+        "bairro": "bairro",
+        "cidade": "Curitiba",
+        "estado": "PR"
+    }
+}

@@ -1,0 +1,26 @@
+networks:
+  network_new:
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+        - subnet: 172.16.0.0/24
+
+services:
+  reverse-proxy:
+    image: nginx
+    ports:
+      - "80:80"
+    volumes:
+      - ../nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+    restart: always
+    networks:
+      - network_new
+    depends_on:
+      - data_service
+
+  data_service:
+    image: path/seu/docker:data-service
+    restart: always
+    networks:
+      - network_new

@@ -1,0 +1,1 @@
+0 3 * * * /home/ubuntu/myservice/scripts/updateips.bash >> /home/ubuntu/myservice/logs/updateips.logs 2>&1

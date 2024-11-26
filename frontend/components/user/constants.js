@@ -1,0 +1,3 @@
+export const NAVBAR_NAMES = [{name:"home", point:"/"}, {name:"perfil", point:"/user/#profile"}, {name:"pagamento", point:"/user/#payment"}, {name:"entrega", point:"/user/#delivery"}]
+export const INPUT_PAGAMENTO = [{cols:{sm:1, mobile:1}, name:"bandeira"}, {cols:{sm:2, mobile:1}, name:"número do cartão"}, {cols:{sm:1, mobile:1}, name:"data de expedição"}, {cols:{sm:2, mobile:1}, name:"CVV"}, {cols:{sm:3, mobile:1}, name:"nome"}]
+export const INPUT_ENDERECO = [{cols:{sm:3, mobile:1}, name:"cep"}, {cols:{sm:2, mobile:1}, name:"endereço"}, {cols:{sm:1, mobile:1}, name:"número"}, {cols:{sm:3, mobile:1}, name:"complemento"}, {cols:{sm:3, mobile:1}, name:"bairro"}, {cols:{sm:2, mobile:1}, name:"cidade"}, {cols:{sm:1, mobile:1}, name:"estado"}]
